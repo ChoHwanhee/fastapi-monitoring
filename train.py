@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 
 def prepare_dataset(test_size=0.2, random_seed=1):
     dataset = pd.read_csv(
-        "/home/ubuntu/fastapi-monitoring/artifacts/winequality-red.csv",
+        "/home/ubuntu/fastapi-monitoring/winequality-red.csv",
         delimiter=",",
     )
     dataset = dataset.rename(columns=lambda x: x.lower().replace(" ", "_"))
